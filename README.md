@@ -9,11 +9,13 @@ I started exploring this on Monday and tuesday to see what I could understand an
 
 At first, it just gave the best fitted pipeline, so I thought what a fancy way to test all the classifier/regressor available in scikit learn(note, TPOT is based on the top on sklearn) using different hyperparameters instead of using grid or random search and choose the best one, reminded of an [H2O demo](https://www.youtube.com/watch?v=42Oo8TOl85I) that I saw earlier, however I haven't explored H2O so this is not a comparison of both of these libraries, it would be interesting to see the results if somebody has. Another library that I came across while going down this road was [auto_sklearn](https://automl.github.io/auto-sklearn/stable/), but we will talk some other day on that and comparison between them.
 
-What I specially like was the feature in TPOT where i can just extract the whole code as a python file, which requires minor changes at my end and get the superb results.
+There are many other such libraries, check this [link](http://epistasislab.github.io/tpot/related/)
+
+What I specially like was the feature in TPOT where I can just extract the whole code as a python file, which requires minor changes at my end and get the superb results.
 ![](https://raw.githubusercontent.com/EpistasisLab/tpot/master/images/tpot-demo.gif)
 
 
-Next question was if it handles feature selection and feature extraction, how do i find out which one are the feature selected/extracted.
+Next question was if it handles feature selection and feature extraction, how do I find out which features are selected/extracted?
 Turns out it does, while there is no direct function to extract, there exist a [workaround](https://github.com/EpistasisLab/tpot/issues/742).
 
 Let's take a sample code to identify the best model (the code is simple and taken directly from repository's [ReadMe file](https://github.com/EpistasisLab/tpot/blob/master/README.md))
@@ -59,4 +61,4 @@ Don't worry about `'PATH/TO/Data/FILE'`, as long as you are able to split your d
 2. [Portugese Bank Marketing](https://github.com/EpistasisLab/tpot/tree/master/tutorials/Portuguese%20Bank%20Marketing)
 
 There are many others available on the site repository. Do check out the [documentation](http://epistasislab.github.io/tpot/). 
-The work is under active developement, look for `help wanted` lables in open issues on git.
+The work is under active development, look for `help wanted` labels in open issues if you would like to contribute.
